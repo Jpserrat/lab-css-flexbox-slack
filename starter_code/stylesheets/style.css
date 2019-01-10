@@ -9,23 +9,28 @@ nav grey: #5b5e6d;
 body, html {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 768px) {
-    nav > img {
-        width: 125px;
-        height: 58px;   
-        padding: 10px; 
-    } 
+    
     .nav-links {
         opacity: 0;
     } 
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
   }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
+nav > img {
+    width: 125px;
+    height: 58px;   
+    padding: 10px; 
+    margin-left: 13%;
+} 
 
 nav {
     position: fixed;
@@ -56,7 +61,6 @@ h1 {
 }
 
 
-
 .good-company button {
     display: block;
 }
@@ -65,8 +69,17 @@ main, footer {
     width: 100%;
 }
 
-header, .footer-1 {
+header {
     margin: 15% 15% 5% 15%;
+}
+
+.footer-1 {
+    margin: 2% 5% 10% 5%;
+    line-height: 50px;
+}
+
+.footer-1 li {
+    list-style-type: none;
 }
 
 header > img {
@@ -78,6 +91,26 @@ header > img {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
+}
+
+.good-company h2 {
+    font-size: 55px;
+}
+
+.title {
+   font-size: 1.2em;
+   font-weight: 900;
+   color: rgb(122, 121, 121);
+}
+
+.footer-1 li {
+    font-size: 1.2em;
+    color: #5b5e6d;
+}
+
+.good-company p {
+    font-size: 1.4em;
 }
 
 .good-company div {
@@ -93,8 +126,17 @@ header > img {
     max-width: 300px;
 }
 
-.good-company:last-child {
+.good-company .no-border {
     border-bottom: none;
+}
+
+.try-for-free {
+    text-align: center;
+    margin: 0 15%;
+}
+
+.try-for-free h2 {
+  font-size: 30px;
 }
 
 button {
@@ -129,19 +171,11 @@ input::placeholder {
     font-size: 1.2em;
 }
 
-.collapse-icon div {
+.collapse-icon  {
     display: inline;
-    height: 25px;
-    width: 30px;
-    position: fixed;
-    top: 30px;
-    right: 50px;
-}
-
-.box {
-    background-color: #2C303F;
-    height: 2px;
-    width: 100%;
+    position: absolute;
+    top:20px;
+    right: 0;
 }
 
 .middle {
@@ -154,4 +188,28 @@ footer > div {
     font-size: 1.2em;
 }
 
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(122, 121, 121);
+}
 
+.footer-2 ul {
+    list-style-type: none;
+}
+
+.footer-2 li {
+    display: inline;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.icons {
+    margin-top: 5%;
+}
+
+.icons i {
+    padding-right: 30px;
+}
